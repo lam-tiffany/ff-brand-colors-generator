@@ -59,9 +59,9 @@ class App extends Component {
         </main>
         <footer>
           <p><small>
-            Made with <a className='App-link' href='https://github.com/bgrins/TinyColor' target='_blank' title='TinyColor Github repository'>TinyColor</a> and <a className='App-link' href='https://casesandberg.github.io/react-color/' target='_blank' title='React-Color official page'>React-Color</a>.
+            Made with <a className='App-link' href='https://github.com/bgrins/TinyColor' target='_blank' rel="noreferrer" title='TinyColor Github repository'>TinyColor</a> and <a className='App-link' href='https://casesandberg.github.io/react-color/' target='_blank' rel="noreferrer" title='React-Color official page'>React-Color</a>.
             <br />
-            Inspired by <a className='App-link' href='https://nicothin.pro/lessColourFunctionCalculator/' target='_blank' title='LESS Colour Function Calculator'>LESS Colour Function Calculator</a> and my teammates' struggles.
+            Inspired by <a className='App-link' href='https://nicothin.pro/lessColourFunctionCalculator/' target='_blank' rel="noreferrer" title='LESS Colour Function Calculator'>LESS Colour Function Calculator</a> and my teammates' struggles.
           </small></p>
         </footer>
       </div>
