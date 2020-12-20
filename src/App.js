@@ -69,7 +69,7 @@ class App extends Component {
           <hr />
           <section>
             <h2>Color contrast checker 🔍</h2>
-            <p>Ensure that the new <code>gradient-dark</code> color combinations meet <a className='App-link' onClick={this.handleWcagToggle} title='Web Content Accessibility Guidelines (Version 2.0)'>WCAG guidelines</a>.</p>
+            <p>Ensure that the new <code>gradient-dark</code> color combinations meet <span className='App-link' onClick={this.handleWcagToggle} title='Web Content Accessibility Guidelines (Version 2.0)'>WCAG guidelines</span>.</p>
             {wcagExpand && <blockquote cite="https://webaim.org/resources/contrastchecker/"><small>
             WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.<br /> 
             Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger. <br/> For more details, please visit <a className='App-link' href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef' target='_blank' rel="noreferrer" title='Web Content Accessibility Guidelines (Version 2.0)'>Web Content Accessibility Guidelines (Version 2.0)</a>.</small></blockquote>}
@@ -107,7 +107,6 @@ class App extends Component {
       </div>
     );
   }
-  
 }
 
 export default App;
