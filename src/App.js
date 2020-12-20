@@ -9,7 +9,8 @@ class App extends Component {
   state = {
     primary: '#794cff',
     gradientDark: '#480bff',
-    copied: false
+    copied: false,
+    wcagExpand: false
   }
 
   handleChangeComplete = (newPrimary) => {
@@ -27,10 +28,14 @@ class App extends Component {
     navigator.clipboard.writeText(this.state.gradientDark);
     this.setState({ ...this.state, copied: true });
   };
+
+  handleWcagToggle = () => {
+    this.setState({ ...this.state, wcagExpand: !this.state.wcagExpand });
+  }
   
 
   render() {
-    const { primary, gradientDark, copied } = this.state;
+    const { primary, gradientDark, copied, wcagExpand } = this.state;
     return (
       <div className="App">
         <header>
@@ -64,7 +69,10 @@ class App extends Component {
           <hr />
           <section>
             <h2>Color contrast checker 🔍</h2>
-            <p>Ensure that the new <code>gradient-dark</code> color combinations meet <a className='App-link' href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef' target='_blank' rel="noreferrer" title='Web Content Accessibility Guidelines (Version 2.0)'>WCAG guidelines</a>.</p>
+            <p>Ensure that the new <code>gradient-dark</code> color combinations meet <a className='App-link' onClick={this.handleWcagToggle} title='Web Content Accessibility Guidelines (Version 2.0)'>WCAG guidelines</a>.</p>
+            {wcagExpand && <blockquote cite="https://webaim.org/resources/contrastchecker/"><small>
+            WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.<br /> 
+            Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger. <br/> For more details, please visit <a className='App-link' href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef' target='_blank' rel="noreferrer" title='Web Content Accessibility Guidelines (Version 2.0)'>Web Content Accessibility Guidelines (Version 2.0)</a>.</small></blockquote>}
             <h3>Level AA, size small:</h3>
             <ContrastChecker
               foregroundColor={gradientDark}
