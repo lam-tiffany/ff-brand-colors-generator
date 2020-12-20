@@ -63,6 +63,7 @@ class App extends Component {
             <br />
             Inspired by <a className='App-link' href='https://nicothin.pro/lessColourFunctionCalculator/' target='_blank' rel="noreferrer" title='LESS Colour Function Calculator'>LESS Colour Function Calculator</a> and my teammates' struggles.
           </small></p>
+          <iframe src="https://ghbtns.com/github-btn.html?user=lam-tiffany&repo=ff-brand-colors-generator&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
         </footer>
       </div>
     );
