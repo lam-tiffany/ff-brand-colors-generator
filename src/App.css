@@ -33,7 +33,7 @@ blockquote {
   border-left: 5px solid white;
 }
 
-.block-picker {
+.block-picker, .sketch-picker, .sketch-gradient input  {
   margin: 15px auto;
 }
 
