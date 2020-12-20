@@ -48,6 +48,14 @@ code {
   cursor: pointer;
 }
 
+.pass-text {
+  color: #3e8935;
+}
+
+.fail-text {
+  color: #ae0519;
+}
+
 .App-link {
   color: #61dafb;
   text-decoration: none;

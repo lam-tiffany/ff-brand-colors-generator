@@ -2,9 +2,9 @@ import React from 'react';
 
 const Color = (props) => {
 
-    const { color} = props;
+    const { bgColor} = props;
     return (
-      <div className='color-block' style={{ backgroundColor: color }}>
+      <div className='color-block' style={{ backgroundColor: bgColor }}>
       </div>
     );
 }

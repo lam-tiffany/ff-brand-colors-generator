@@ -3,11 +3,12 @@ import tinycolor from 'tinycolor2';
 import React, { Component } from 'react';
 import { BlockPicker } from 'react-color';
 import Color from './components/Color';
+import ContrastChecker from './components/ContrastChecker';
 
 class App extends Component {
   state = {
-    primary: '#794CFF',
-    gradientDark: '#480BFF',
+    primary: '#794cff',
+    gradientDark: '#480bff',
     copied: false
   }
 
@@ -40,22 +41,52 @@ class App extends Component {
           <hr/>
         </header>
         <main>
-          <form>
-            <label>1) Select or input hex code of your <code>brand-primary-color</code></label>
-              <BlockPicker
-                  color={primary}
-                  colors={['#794CFF', '#005DAA', '#BF9E66', '#3498DB', '#ED0722', '#54b848', '#D9E3F0', '#F47373', '#697689', '#37D67A', '#2CCCE4', '#555555', '#dce775', '#ff8a65', '#ba68c8' ]}
-                  triangle='hide'
-                  onChangeComplete={this.handleChangeComplete}
-              />
-          </form>
-          <form>
-            <label>2) Preview and copy the hex code of your <code>gradient-dark</code><Color color={gradientDark} /></label>
-            <input className='text-area' type="text" id="gradient-dark" name="gradient-dark" value={gradientDark} />
-            <input className='btn' type="submit" value={!copied ? 'Copy' : 'Copied!'} onClick={this.handleCopyText} disabled={copied ? true : false}/> 
-          </form>
-          <p>3) You're all set! 🥳 See you again next time.</p>
+          <section>
+            <form>
+              <label>1) Select or input hex code of your <code>brand-primary-color</code></label>
+                <BlockPicker
+                    color={primary}
+                    colors={['#794CFF', '#005DAA', '#BF9E66', '#3498DB', '#ED0722', '#54b848', '#D9E3F0', '#F47373', '#697689', '#37D67A', '#2CCCE4', '#555555', '#dce775', '#ff8a65', '#ba68c8' ]}
+                    triangle='hide'
+                    onChangeComplete={this.handleChangeComplete}
+                />
+            </form>
+            <form>
+              <label>
+                2) Preview and copy the hex code of your <code>gradient-dark</code>
+                <Color bgColor={gradientDark} />
+              </label>
+              <input className='text-area' type="text" id="gradient-dark" name="gradient-dark" value={gradientDark} />
+              <input className='btn' type="submit" value={!copied ? 'Copy' : 'Copied!'} onClick={this.handleCopyText} disabled={copied ? true : false}/> 
+            </form>
+              <p>3) You're all set! 🥳 See you again next time.</p>
+          </section>
           <hr />
+          <section>
+            <h2>Color contrast checker 🔍</h2>
+            <p>Ensure that the new <code>gradient-dark</code> color combinations meet <a className='App-link' href='https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef' target='_blank' rel="noreferrer" title='Web Content Accessibility Guidelines (Version 2.0)'>WCAG guidelines</a>.</p>
+            <h3>Level AA, size small:</h3>
+            <ContrastChecker
+              foregroundColor={gradientDark}
+              level='AA'
+              fontSize='small' />
+            <h3>Level AA, size large:</h3>
+            <ContrastChecker
+              foregroundColor={gradientDark}
+              level='AA'
+              fontSize='large' />
+            <h3>Level AAA, size small:</h3>
+            <ContrastChecker
+              foregroundColor={gradientDark}
+              level='AAA'
+              fontSize='small' />
+            <h3>Level AAA, size large:</h3>
+            <ContrastChecker
+              foregroundColor={gradientDark}
+              level='AAA'
+              fontSize='large' />
+          </section>
+          <hr/>
         </main>
         <footer>
           <p><small>
