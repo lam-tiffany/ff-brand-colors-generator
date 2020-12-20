@@ -49,7 +49,7 @@ blockquote {
   font-size: calc(8px + 2vmin);
 }
 
-.btn {
+.btn, .sketch-gradient .btn {
   font-size: calc(8px + 2vmin) !important;
   margin-left: 10px;
   cursor: pointer;
