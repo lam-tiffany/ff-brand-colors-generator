@@ -59,7 +59,7 @@ class App extends Component {
   
 
   render() {
-    const { primary, gradientDark, copied, wcagExpand, sketchExpand, paidGenie, genieSelections } = this.state;
+    const { primary, gradientDark, copied, wcagExpand, sketchExpand } = this.state;
     return (
       <div className="App">
         <header>
