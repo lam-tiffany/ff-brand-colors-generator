@@ -5,7 +5,11 @@ App URL: https://ffbrandcolors.netlify.app/
 
 ## Purpose
 
-Serves as a helper tool for devs while changing / testing brand primary colors. In v.1.0, there are 2 features:
+Just for fun. 
+
+Serves as a helper tool for devs while changing / testing brand primary colors. 
+
+In v.1.0, there are 2 features:
 
 
 **Feature 1) Brand colors generator:** 
