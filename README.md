@@ -1,7 +1,7 @@
 # FFAI Brand Colors Generator v1.0
 
-A color modification tool for generating non-primary branded colors required in the FFAI app.\
-App URL: https://ffbrandcolors.netlify.app/
+A color modification tool to easily generate non-primary branded colors required in the FFAI app.\
+Project URL: https://ffbrandcolors.netlify.app/
 
 ## Purpose
 
