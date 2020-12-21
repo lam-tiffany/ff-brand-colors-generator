@@ -17,7 +17,7 @@ Serves as a helper tool for devs while changing / testing brand primary colors. 
 - If the color contrast is not ideal, devs can use Sketch color picker to manually pick a lighter/darker shade of the `gradient-dark` color and check again until it meets the WCAG standards. 
 - When devs manually pick a `gradient-dark` color, the `brand-primary-color` will be updated in **Brand colors generator** section. 
 
-## Next Steps
+## Future improvements & Next steps
 - [ ] Color contrast checker checks Pass/Fail grade of `brand-primary-color` as well
 - [ ] Preview feature: Preview UI elements used in FFAI app with the geneated color combinations
 - [ ] Advanced search feature: Find the most readable color for a given situation (levels, font size, backgroundColor)
