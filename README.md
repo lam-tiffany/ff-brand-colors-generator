@@ -27,4 +27,4 @@ Serves as a helper tool for devs while changing / testing brand primary colors. 
 ## Credits
 
 Made with [TinyColor](https://github.com/bgrins/TinyColor) and [React-Color](https://casesandberg.github.io/react-color/).\
-Inspired by [LESS Colour Function Calculator](https://nicothin.pro/lessColourFunctionCalculator/) and my teammates' struggles.
+Inspired by [LESS Colour Function Calculator](https://nicothin.pro/lessColourFunctionCalculator/) and my team's struggles.
